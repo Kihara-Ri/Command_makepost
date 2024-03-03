@@ -18,7 +18,7 @@ def create_post(title, file_path):
     post_path = os.path.join(file_path, f"{title}.md")
     
     # 填充内容
-    content = f"""--- 
+    content = f"""---
 title: {title}
 date: '{date_now}'
 updated: 
@@ -32,10 +32,12 @@ mathjax:
 swiper_index: 
 tags: 
   - 
-  - 
 abbrlink: {title}
 main_color: "#e4bf66"
 ---
+
+# {title}
+
 """
     
     # 写入文件
